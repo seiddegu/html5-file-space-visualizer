@@ -1,0 +1,852 @@
+<title>HTML File Visualizer</title>
+<meta name="description" content="Visualize the Directories and Space on a Hard Drive" />
+<meta name="keywords" content="HTML5,File System, Zetta.net, folders, directories, space" />
+<meta name="author" content="Lou Montulli" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+
+<script>
+  function supportsSvg() {
+    return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1");
+  }
+
+  var g_compatible = -1;
+  function checkCompatibility() {
+		
+		if(g_compatible != -1)
+			return g_compatible;
+
+		if(!supportsSvg())
+			g_compatible = 0;
+
+		if(1 || g_compatible == 0)
+		{
+			// do one time things for incompatibility
+		}
+
+	return g_compatible;
+  }
+
+  checkCompatibility();
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/dojo/1.6.0/dojo/dojo.xd.js"
+        data-dojo-config="isDebug: false,parseOnLoad: true">
+</script>
+
+<script>
+
+	function loadjscssfile(filename){
+		var fileref;
+		if (filename.indexOf(".js")!=-1){ //If object is a js file
+				fileref=document.createElement('script')
+				fileref.setAttribute("type","text/javascript")
+				fileref.setAttribute("src", filename)
+		}
+		else if (filename.indexOf(".css")!=-1){ //If object is a css file
+				fileref=document.createElement("link")
+				fileref.setAttribute("rel", "stylesheet")
+				fileref.setAttribute("type", "text/css")
+				fileref.setAttribute("href", filename)
+		}
+
+		document.getElementsByTagName("head").item(0).appendChild(fileref)
+
+		return fileref;
+	}
+
+	if(checkCompatibility()) {
+		var debug = ( document.location.search.indexOf("debug") > -1 );
+		if(debug==0) {
+			loadjscssfile('CSS/all.css');
+			loadjscssfile('JS/all.js');
+
+			// these seem to mess up when included with all.css
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/resources/dojo.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojox/grid/resources/Grid.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojox/grid/resources/claroGrid.css');
+
+		} else {
+			//loadjscssfile('http://mbostock.github.com/d3/d3.js?2.6.0');
+			loadjscssfile('JS/d3.js?2.6.0');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojo/resources/dojo.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dijit/themes/claro/claro.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojox/grid/resources/Grid.css');
+			loadjscssfile('http://ajax.googleapis.com/ajax/libs/dojo/1.6/dojox/grid/resources/claroGrid.css');
+			//loadjscssfile('http://mbostock.github.com/d3/d3.layout.js?2.6.0');
+			loadjscssfile('JS/d3.layout.js?2.6.0');
+
+
+			loadjscssfile('CSS/prettyPhoto.css');
+			loadjscssfile('CSS/progressBar.css');
+			loadjscssfile('CSS/button.css');
+			loadjscssfile('CSS/cluster.css');
+			loadjscssfile('CSS/pack.css');
+			loadjscssfile('CSS/treemap.css');
+			loadjscssfile('CSS/bubble.css');
+			loadjscssfile('CSS/demo.css');
+			loadjscssfile('CSS/help.css');
+			loadjscssfile('CSS/summary.css');
+			loadjscssfile('CSS/fisheye.css');
+
+			loadjscssfile('JS/jquery.prettyPhoto.js');
+			loadjscssfile('JS/interface.js');
+			loadjscssfile('JS/read_manifest.js');
+			loadjscssfile('JS/type_utils.js');
+			loadjscssfile('JS/tree_utils.js');
+			loadjscssfile('JS/tree_layout.js');
+			loadjscssfile('JS/circle_packing.js');
+			//loadjscssfile('JS/zoomSunburst.js');
+			loadjscssfile('JS/sunburst.js');
+			loadjscssfile('JS/tree_map.js');
+			loadjscssfile('JS/summary.js');
+			loadjscssfile('JS/fisheye.js');
+			loadjscssfile('JS/bubble_chart.js');
+			loadjscssfile('JS/dojoTreeGrid.js');
+			loadjscssfile('JS/dojoDataGrid.js');
+		}
+	}
+
+
+	function java_finished(arg1) {
+		//alert("clear_java() called:" + arg1);
+	}
+
+	function java_error(arg1) {
+		if(g_debug)
+			alert("The Java applet experienced an error.\nError  Message: " + arg1);
+	}
+
+	function selected_path(path) {
+		//alert("selected_path() called: " + path);
+		readFile(path);
+	}
+
+	function ManifestDataFromJava(data) {
+		//alert("ManifestDataFromJava() called: " + data);
+		// old format got a detailed manifest
+		//loadManifestFromMemory(data);
+
+		// new format receives JSON data precompiled
+		loadJSONTreeFromMemory(data);
+
+		return null;
+	}
+
+	function launch_java_manifest_builder(path, iebrowser) {
+		remove_manifest_builder_button();
+
+		var obj = d3.select("#javabuilder_attached").html('\
+			<object id="javabuilder_applet" width="100" height="100" align="top" \
+			type="application/x-java-applet" archive="CreateDirManifest.jar?38, gson-2.2.1.jar" \
+			code="plugin.BrowserKickOff.class" name="Java Directory Tree List Builder">\
+			Java Applet to traverse a folder and generate a manifest\
+			<param value="Java Directory Tree List Builder" name="name">\
+			<param value="plugin.BrowserKickOff.class" name="code">\
+			<param value="CreateDirManifest.jar?38, gson-2.2.1.jar" name="archive">\
+			</object>\
+			');
+	}
+
+
+	function remove_manifest_builder_button() {
+		d3.select("#javabuilder_applet").remove();
+	}
+
+	// JApplet invoked functions
+	// DO NOT modify interface without modifying applet code
+	function selected_path(path) {
+
+		remove_dirpicker_button();
+		$('.java_callback_result').removeClass('java_callback_result').val(path).trigger('change');
+		if (!z.disabledforv1)
+				displaywarningmessage();
+
+		//        var path = document.applets[0].selectedPath();
+		//        var anchor = $("#system_config_panel").prev();
+		//        display_success_flashmsg(anchor, path);
+	}
+
+
+  // called when we start to load the manifest or JSON data
+  function startLoadingCallback(url) {
+		
+    	document.getElementById('load_data').style.display="none";
+		document.getElementById('status_title').innerHTML = "Loading: " + url + "...<br>";
+    	document.getElementById('status_area').style.visibility="visible";
+  }
+
+  function onPageLoad() {
+
+	if(checkCompatibility()) {
+		$("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: false });
+
+		registerCharts(); 
+
+		startFisheyeMenu();
+
+		// hide the loading and unhide the buttons
+		document.getElementById('page_loading').style.display="none";
+
+		g_runBenchmark = (document.location.search.indexOf("RunBenchmark") > -1);
+
+		var loadJSON = document.location.search.indexOf("loadJSON=");
+		var loadManifest;
+		if(loadJSON > -1) 
+		{
+			var amp = document.location.search.indexOf("&", loadJSON);
+
+			if(amp > -1)
+				var urlToLoad = document.location.search.substr(loadJSON+9, amp-loadJSON-9);
+			else
+				var urlToLoad = document.location.search.substr(loadJSON+9);
+
+			loadJSONTreeFromURL(urlToLoad);
+		}
+		else if((loadManifest = document.location.search.indexOf("loadManifest=")) > -1)
+		{
+			var amp = document.location.search.indexOf("&", loadManifest);
+
+			if(amp > -1)
+				var urlToLoad = document.location.search.substr(loadManifest+13, amp-loadJSON-13);
+			else
+				var urlToLoad = document.location.search.substr(loadManifest+13);
+
+			loadManifestFromURL(urlToLoad);
+		}
+		else
+		{
+			// show the loader
+			document.getElementById('load_data').style.visibility="visible";
+		}
+	}
+    else
+	{
+    	document.getElementById('page_loading').innerHTML = "<h2>This HTML application requires features that are not supported in the browser you are using.</h2> This has been tested on Firefox 10+, Chrome 16+, and recent releases of Webkit.   Please try again with a different browser";
+	}
+  }
+
+</script>
+
+<body class="claro" onLoad="onPageLoad()">
+<!-- load the main controls first because the fisheye widget needs to think it is at the top -->
+<div id="fullScreenHelp" style="display: none;">
+</div>
+<div id="main_controls">
+  <div style="visibility:hidden;" id="vis_buttons">
+	  <div id="fisheye">
+        	<div id="fisheyeContainer">
+			<div class="hiddenHelpOverlay" style=display:none;"><IMG SRC="IMAGES/FishEyeHelp.svg"></div>
+			</div>
+	  </div>
+
+    <!--<a href="overallHelp.html?ajax=true&width=700&height=480" rel="prettyPhoto[ajax]" id="main_help" style="position:fixed; top:0px; left: 0px; font-size: 20px; text-decoration:none; color: steelblue;"><img title="Show UI and navigation help" align=top src="IMAGES/helpIcon.png">Help</a>
+-->
+    <a href="#" onClick="showHiddenHelpOverlays()" id="main_help" style="position:fixed; top:0px; left: 0px; font-size: 20px; text-decoration:none; color: steelblue;"><img title="Show UI and navigation help" align=top src="IMAGES/helpIcon.png">Help</a>
+    <a href="#" id="main_reload" onClick="location.reload()" style="position:fixed; top: 0px; right: 0px; font-size: 20px; text-decoration:none; color: steelblue;">Start Over&nbsp;</a>
+
+    <table>
+	<tr>
+	  <td><a href="viewHelp.html?ajax=true&width=480&height=480" rel="prettyPhoto[ajax]"><img title="Show Help for the VIEW menu" height="20" src="IMAGES/helpIcon.png"></a></td>
+	  <td align="right" id="typeButtonsLabel">
+		<div style="position:relative">
+			<div class="hiddenHelpOverlay" style=display:none;"><IMG SRC="IMAGES/ViewHelp.svg"></div>
+      		<div title="Change the analysis of the data from size based to type based">View <b>:</div>
+		</div>
+	  </td>
+<!--
+	  <td id="typeButtons"><button class='first active' id='typeAsSize' onClick="setDataAsSize()">
+        	Size of files
+      		</button><button class='last' id='typeAsType' onClick="setDataAsType()">
+        	Type of files
+      		</button>&nbsp; &nbsp;<button class='first last' id='typeAsExts' onClick="setDataAsExts()">
+        	All known extensions
+      		</button>
+-->
+	  <td id="typeButtons">
+	  <form action="../">
+	  <select onchange="changeDataType(this.options[this.selectedIndex].value)">
+	  <option value="size">By Size</option>
+	  <option value="type">By Type</option>
+	  <option value="date">By Date</option>
+	  <!--<option value="all_exts">Explore all extensions</option> -->
+	  </select>
+	  </form>
+
+	  </td>
+	</tr>
+<!-- remove chart status line to compact space vertically
+	<tr>
+	  <td><a href="chartHelp.html?ajax=true&width=480&height=480" rel="prettyPhoto[ajax]"><img title="Show Help for the CHART title" height="20" src="IMAGES/helpIcon.png"></a></td>
+	  <td align="right" id="chartButtonsLabel"> 
+		<div style="position:relative">
+			<div class="hiddenHelpOverlay" style=display:none;"><IMG SRC="IMAGES/ChartHelp.svg"></div>
+			<div title="The type of chart currently displayed">Chart <b>: </div>
+		</div>
+	  </td>
+    	  <td id="chartButtons">
+	  </td>
+	</tr>
+-->
+        <tr>
+	  <td><a href="subTreeHelp.html?ajax=true&width=480&height=480" rel="prettyPhoto[ajax]"><img title="Show Help for the SUB TREE field" height="20" src="IMAGES/helpIcon.png"></a></td>
+	  <td align="right">
+		<div style="position:relative">
+		 <div class="hiddenHelpOverlay" style=display:none;"><IMG SRC="IMAGES/SubTreeHelp.svg"></div>
+	     <div title="Defines the subset of the data that is currently being viewed">Sub Tree <b>:</div>
+	    </div>
+	  </td>
+	  <td id="subTreePath">
+	  </td>
+	</tr>
+      </table>
+  </div>
+  <div id='title' style="display:none"></div> 
+</div>
+
+<div id="page_loading" class="docs">
+    <h1>Loading Page, please be patient... <img src="IMAGES/waiting.gif"></h1>
+</div>
+
+<div style="visibility:hidden" class="docs" id="load_data">
+    Welcome to the File System Visualizer from Zetta.net.      This tool will analyze your file system and visualize the space used, item counts and data types to help you understand your space usage.   You can choose a sample data set for a demo, or you can use the embeded Java application to scan your local file system.    All the analysis is done using local Javascript, none of the data leaves this page or is sent to a server.  This tool relies in part on the work of the creators of JQuery, D3.js and Dojo. Enjoy...
+    <p>
+    &nbsp; &nbsp;
+    <b>Step 1) Load data into the browser: </b><br>
+	<ul>
+	<li><form action="../">
+	Use demo data loaded from the internet: &nbsp;
+	<select onchange="loadJSONTreeFromURL(this.options[this.selectedIndex].value)">
+    	<option value="">Choose a Sample Data Set...</option>
+    	<option value="demo_files/lou_vids_json.txt">Small (videos)</option>
+    	<option value="demo_files/sales_demo_json.txt">Medium (various)</option>
+    	<option value="demo_files/lou_pics_json.txt">Large (images)</option>
+    	<option value="demo_files/lou_mp3_json.txt">Very Large (mp3s)</option>
+	</select>
+	</form>
+	&nbsp;&nbsp; or &nbsp;
+      	<li>Use a Java application to collect data from your local machine: <button class='first last' id='javabuilder_button' onClick="launch_java_manifest_builder(null, false)">Start Java Applet</button>
+		<script>
+			if(!navigator.javaEnabled()) {
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;<font size=-1 color='red'>Java is not installed or enabled on this system.   Please <a href='http://java.com/en/download/index.jsp'>install Java</a> to use this feature</font>");
+			}
+		</script>
+	<br>&nbsp;&nbsp; or &nbsp;
+        <li>Load an existing manifest file from your machine: <input type="file" id="files" name="file" />
+	</ul>
+      	<div id='javabuilder_attached'></div>
+
+   <p>
+    &nbsp; &nbsp;
+</div>
+<div style="visibility:hiddennn" id="status_area">
+	<div id="status_title"></div>
+	<div id="status"></div>
+    <div id="progress_bars">
+    <div id="read_progress_bar"><div class="read_percent">0%</div></div>
+    <div id="parse_progress_bar"><div class="parse_percent">0%</div></div>
+    </div>
+   <p>
+</div>
+<div id="debugOutput"></div>
+
+
+<div class='gallery' id='chart'></div>
+<div class='claro' id='grid'></div>
+
+<script>
+
+  // a local function since "handleFileSelect" may load later
+  function localHandleFileSelect(evt) {
+	handleFileSelect(evt);
+  };
+  document.getElementById('files').addEventListener('change', localHandleFileSelect, false);
+
+
+  var g_runBenchmark = false;
+  var g_useFisheyeUI = 1;
+  var g_sizeTreeData;
+  var g_typeTreeData;
+  var g_dateTreeData;
+  var g_knownExtensions;
+  var g_activeTreeData = {};
+  var g_activeTreeDataRoot = {};
+  var g_currentChartButtonId;
+  var g_visualizerList = [];
+  var g_uniqueId = 1;
+  var g_subTreePath = [];
+  var g_debug = ( document.location.search.indexOf("debug") > -1 );
+
+  function setActiveTypeButton(buttonId) {
+	d3.select("#typeButtons").selectAll("*").classed("active", false);
+	d3.select("#"+ buttonId).classed("active", true);
+  }
+
+  function setActiveChartButton(buttonId) {
+	d3.select("#chartButtons").selectAll("*").classed("active", false);
+	d3.select("#"+buttonId).classed("active", true);
+  }
+
+  // take a pathArray and transform it to a string
+  // WARNING: this destroys the array, so clone before calling the base
+  // this is recursive
+  function pathArrayToString( pathArray, buildUpString ) {
+	
+		if(buildUpString == undefined)
+			buildUpString = "";
+	
+		if( pathArray.length == 0)
+			return buildUpString;
+
+		if(buildUpString.length > 0)
+			buildUpString += "/";
+
+		buildUpString += pathArray[0];
+		pathArray.shift();
+
+		return pathArrayToString( pathArray, buildUpString);
+  }
+
+  function displaySubTreePath() {
+
+	d3.select("#subTreePath").html("");  // erase old
+
+	// don't display a path if we have no indentation
+	if(g_subTreePath.length > 1)
+	{
+
+			// for the n-1 items.   Create links for them
+			for( var x=0; x < g_subTreePath.length-1; x++ ) {
+
+					d3.select("#subTreePath")
+							.append("a")
+							.attr("onClick","setABSTreePath('" + pathArrayToString(g_subTreePath.slice(0,x+1)) + "')")
+							.attr("href","#")
+							.text(g_subTreePath[x]);
+
+					d3.select("#subTreePath")
+							.append("b")
+							.text(" : ");
+			}
+
+			// special case the last one
+			if(g_subTreePath.length > 0) {
+					d3.select("#subTreePath")
+							.append("font")
+							.text(g_subTreePath[g_subTreePath.length-1]);
+			}
+
+			//d3.select("#subTreePath")
+					//.append("font")
+					//.text("   -- (click to select a higher node on the tree) ");
+	}
+	else
+	{
+		d3.select("#subTreePath")
+			.append("font")
+			.text("ALL");
+	}
+  }
+
+  function validateSubPath( treeRootNode, newPath ) {
+
+	if(g_debug && (newPath.length < 1 || newPath[0] != treeRootNode.name))
+		alert("Bad path passed to validateSubPath: " + newPath + " Expected: " + treeRootNode.name);
+
+	newPath.shift();  // pop the first item
+	
+	// if there is no more path data to traverse then we must have been successful
+  	// this is also true of a blank newPath
+	if(newPath.length == 0)
+	{
+		g_activeTreeData = treeRootNode;
+		return true;
+	}
+
+	// check the first one and then recurse
+	for(var i in treeRootNode.children)
+	{
+		if(treeRootNode.children[i].name == newPath[0])
+			return validateSubPath( treeRootNode.children[i], newPath );
+	}
+
+	return false;
+  }
+
+
+  // sets the active tree to point to a subpath of the current tree.
+  // this is relative to the current sub tree
+  function setSubTreePath( pathString ) {
+
+	var newPath = pathString.split("/");
+	console.log("Path passed to setSubTreePath is: " + pathString);
+
+	// validate path and set if valid
+	if(validateSubPath( g_activeTreeData, dojo.clone(newPath) ))
+	{
+		g_subTreePath = newPath;
+  	    reloadCurrentChart();
+     	displaySubTreePath();
+	}
+  }
+
+  // the same as setSubTreePath, but works on the root of the tree.
+  // so the pathString passed in must be relative to the root of 
+  // the base data, not the root of what is being displayed
+  function setABSTreePath( pathString ) {
+
+	var newPath = pathString.split("/");
+
+	// validate path and set if valid
+	if(validateSubPath( g_activeTreeDataRoot, dojo.clone(newPath) ))
+	{
+		g_subTreePath = newPath;
+  	    reloadCurrentChart();
+     	displaySubTreePath();
+	}
+  }
+	
+
+  // recursive function to find a nodeId in the active tree
+  // sets the active tree to the sub node once found 
+  // and sets the path Array as well
+  //
+  // nodeId : id of the node we want to set
+  // subTree : the currently recursed level of the tree
+  // treePathArray : an array we are building up to track the sub path
+  function findAndSetSubtreeViaId ( nodeId, subTree, treePathArray ) {
+
+	if(subTree.id == nodeId) 
+	{
+		// found it
+		g_activeTreeData = subTree;
+		treePathArray.push(subTree.name);
+		g_subTreePath = treePathArray;
+
+		console.log("found node via id in findAndSetSubtreeViaId:");
+		console.log(treePathArray);
+		
+		return true;
+	}
+
+	if(subTree.children != undefined)
+	{
+		treePathArray.push(subTree.name);
+		for(var i in subTree.children)
+		{
+			if(findAndSetSubtreeViaId( nodeId, subTree.children[i], treePathArray))
+				return true;	
+		}
+		treePathArray.pop();  // remove ourselves since we didn't find it on this branch 
+	}
+
+  }
+
+  function setSubTreeViaId ( nodeId ) {
+
+	// the id should always be in the currently displayed subtree
+	console.log("setSubTreeViaId starting path:");
+	console.log(g_subTreePath);
+
+	// when we pass the current subTreePath to findAndSetSubtreeViaId we need
+    // to take off the last element so that we don't add it back on again
+     tmp_subTreePath = dojo.clone(g_subTreePath);
+	 tmp_subTreePath.pop();
+     if(false == findAndSetSubtreeViaId ( nodeId, g_activeTreeData, tmp_subTreePath) )
+		alert("setSubTreeViaId could not locate Id: " + nodeId);
+	 else
+  	    reloadCurrentChart();
+
+     displaySubTreePath();
+  }
+
+  // returns an object with a width and height (w,h)
+  function getViewPortSize() {
+	var w=window,
+	    d=document,
+	    e=d.documentElement,
+  	    g=d.getElementsByTagName('body')[0],
+            x=w.innerWidth||e.clientWidth||g.clientWidth,
+	    y=w.innerHeight||e.clientHeight||g.clientHeight;
+
+	return { w : x, h : y };
+  }
+
+  function chartButtonClick( chartButtonId ) {
+
+     var chartObj;
+
+     for(var i in g_visualizerList)
+     {
+        if(g_visualizerList[i].buttonId == chartButtonId)
+        {
+           chartObj = g_visualizerList[i];
+           break
+        }
+     }
+
+     if(chartObj == undefined)
+     { 
+        alert("Invalid buttonId passed to chartButtonClick: " + chartButtonId);
+        return;
+     }
+
+     setTitle( chartObj.chartTitle );
+
+     clearChartArea();
+
+     if(g_useFisheyeUI) {
+	     // set the name as text instead
+		d3.select("#chartButtons").html( chartObj.chartTitle );
+     } else {
+     	setActiveChartButton( chartObj.buttonId );
+     }
+
+     var window_size = getViewPortSize();
+     var controls = document.getElementById("main_controls");
+
+     if(controls && controls.offsetHeight > 0)
+        window_size.h -= controls.offsetHeight;
+     else
+     	window_size.h -= 60;   // subtract for our controls
+
+     //chartObj.functionRef( "#chart", window_size, dojo.clone(g_activeTreeData) );
+     chartObj.functionRef( "#chart", window_size, g_activeTreeData );
+
+     g_currentChartButtonId = chartObj.buttonId;
+  }
+
+  function setTitle(chartName) {
+    if(g_activeTreeData.containerCountWithChildren)
+    	d3.select("#title").html("&nbsp; " + chartName + " - " + g_activeTreeData.containerCountWithChildren + " folders");
+    else
+    	d3.select("#title").html("&nbsp; " + chartName);
+  }
+
+  function clearChartArea() {
+	d3.select("#chart").html("");
+  }
+
+  // register a new visualizer
+  function registerNewTreeDataVisualizer( chartTitle, buttonTitle, icon_href, functionRef )
+  {
+	newObj = {};
+
+	newObj.chartTitle = chartTitle;
+	newObj.buttonTitle = buttonTitle;
+	newObj.functionRef = functionRef;
+	newObj.buttonId = "chartButton" + g_uniqueId++;
+
+	g_visualizerList.push(newObj);
+
+	if(g_visualizerList.length == 1)
+	{
+		// default to the first one
+		g_currentChartButtonId = newObj.buttonId;
+	}
+
+	if(g_useFisheyeUI) {
+
+		var atag = d3.select("#fisheyeContainer").append("a").attr("href","#").attr("class","fisheyeItem")
+						.attr("onClick", "chartButtonClick(\"" + newObj.buttonId + "\")");
+		atag.append("img").attr("width","100").attr("SRC",icon_href);
+		atag.append("span").text(buttonTitle);
+
+	} else {
+
+		if(g_visualizerList.length == 1)
+			buttonClass = "first";
+		else
+			buttonClass = "middle";
+
+		// add a button
+		d3.select("#chartButtons").append("button")
+			.attr("id", newObj.buttonId)
+			.attr("class", buttonClass)
+			.text(newObj.buttonTitle)
+			.attr("onClick", "chartButtonClick(\"" + newObj.buttonId + "\")");
+	}
+  }
+
+  function registerCharts () {
+    registerNewTreeDataVisualizer( "Summary", "Summary", "IMAGES/Summary.SVG", displaySummary );
+    registerNewTreeDataVisualizer( "Visual Tree (Dendrogram)", "Visual Tree", "IMAGES/VisualTree.SVG", displayTreeLayout );
+    registerNewTreeDataVisualizer( "Hierarchical List", "Hierarchical List", "IMAGES/HierarchicalList.PNG", displayDojoTreeGrid );
+    registerNewTreeDataVisualizer( "Flattened List", "Flattened List", "IMAGES/FlattenedList.PNG", displayDojoDataGrid);
+    //registerNewTreeDataVisualizer( "Sunburst", "Sunburst", "IMAGES/ZoomSunburst.SVG", displayZoomSunburst);
+    registerNewTreeDataVisualizer( "Sunburst", "Sunburst", "IMAGES/Sunburst.SVG", displaySunburst);
+    registerNewTreeDataVisualizer( "Tree Map", "Tree Map", "IMAGES/TreeMap.PNG", displayTreeMap);
+    //registerNewTreeDataVisualizer( "Circle Packing", "Circle Pack", "IMAGES/CirclePack.SVG", displayCirclePack);
+    registerNewTreeDataVisualizer( "Bubble Chart", "Bubble Chart", "IMAGES/Bubble.SVG", displayBubbleChart);
+
+    //  registerNewTreeDataVisualizer( "Visual Tree (Dendrogram)", "Visual Tree", displayDendrogram );
+  };
+
+
+  function registerChartsDone () {
+ 	// pretty up the buttons 
+
+  }
+
+  function reloadCurrentChart() {
+
+	chartButtonClick( g_currentChartButtonId );
+
+  }
+
+  function resetChartForNewData() {
+
+	g_subTreePath = [];
+	displaySubTreePath();
+	reloadCurrentChart();
+  }
+
+  function setDataAsSize () {
+	g_activeTreeData = g_sizeTreeData;
+	g_activeTreeDataRoot = g_sizeTreeData;
+	setActiveTypeButton("typeAsSize");
+	resetChartForNewData();
+  }
+
+  function setDataAsType () {
+	g_activeTreeData = g_typeTreeData;
+	g_activeTreeDataRoot = g_typeTreeData;
+	setActiveTypeButton("typeAsType");
+	resetChartForNewData();
+  }
+
+  function setDataAsDate () {
+	g_activeTreeData = g_dateTreeData;
+	g_activeTreeDataRoot = g_dateTreeData;
+	setActiveTypeButton("typeAsDate");
+	resetChartForNewData();
+  }
+
+  function setDataAsExts () {
+	g_activeTreeData = g_knownExtensions;
+	g_activeTreeDataRoot = g_knownExtensions;
+	setActiveTypeButton("typeAsExts");
+	resetChartForNewData();
+  }
+
+  function changeDataType( type_string ) {
+	if(type_string == "size")
+		setDataAsSize();
+	else if(type_string == "type")
+		setDataAsType();
+	else if(type_string == "date")
+		setDataAsDate();
+	else if(type_string == "all_exts")
+		setDataAsExts();
+  }
+
+
+  var g_benchMarkStartTime = 0;
+  var g_benchMarkVisualizations = 0;
+  function loadFirstChart() {
+    // unhide the buttons
+    document.getElementById('vis_buttons').style.visibility="visible";
+
+    // hide the loader
+    document.getElementById('load_data').style.display="none";
+    document.getElementById('status_area').style.display="none";
+
+    displaySubTreePath();
+
+	if(g_runBenchmark)
+	{
+		if(g_benchMarkStartTime == 0)
+		{
+			// first one
+			g_benchMarkStartTime = new Date().getTime();
+			chartButtonClick( g_currentChartButtonId );
+			setTimeout(loadFirstChart, 1);
+  			g_benchMarkVisualizations++;
+			return;
+		}
+
+		// run through all the charts once and time the whole thing
+		for(var i=0; i < g_visualizerList.length; i++) 
+		{
+			if(i+1 == g_visualizerList.length)
+			{
+				// end of the list
+				var endTime = new Date().getTime();
+
+				var totalTime = endTime - g_benchMarkStartTime;
+
+				alert("Ran through " + g_benchMarkVisualizations + " visualizations.\nThe time to run the benchmark was: " + totalTime/1000.0 + " seconds");
+
+				g_runBenchmark = false;
+				return;
+			}
+  			else if(g_visualizerList[i].buttonId == g_currentChartButtonId)
+			{
+				// load the next one
+				chartButtonClick( g_visualizerList[i+1].buttonId );
+  				g_benchMarkVisualizations++;
+				setTimeout(loadFirstChart, 1);
+				return;
+				
+			}
+		}
+
+	}
+	else
+	{
+    	// the first button registered is defaulted
+    	reloadCurrentChart();
+	}
+
+  };
+
+  function  manifestLoadCallbackFunction(size_data, type_data, date_data, exts_data) {
+
+ 	//alert(JSON.stringify(data, null, 5));
+	g_sizeTreeData = size_data;
+	g_typeTreeData = type_data;
+	g_dateTreeData = date_data;
+	g_knownExtensions = exts_data
+
+	g_activeTreeData = g_sizeTreeData;
+	g_activeTreeDataRoot = g_sizeTreeData;
+
+	// make the min size be .01% 
+	//var min_size = Math.floor(.0001 * (g_sizeTreeData.totalSizeWithChildren/1024)); 
+	//min_size = min_size*1024;
+
+	var min_size = 500*1024;
+
+	// check to see if this is a really large tree and offer to pair it down
+    if(!g_runBenchmark && g_sizeTreeData.containerCountWithChildren > 5000) {
+		var answer = confirm("You have " + g_sizeTreeData.containerCountWithChildren + " folders which may cause a significant slowdown when using some of the visualizations.   Viewing will be faster by removing very small or empty folders.\n\nWould you like to suppress all folders smaller than " + min_size/1024 + "K?   (This will not effect your actual folders)");
+
+		if(answer) {
+			var orig_folders = g_sizeTreeData.containerCountWithChildren;
+			var removed = removeLeafNodesSmallerThan(g_sizeTreeData, min_size);
+			removeLeafNodesSmallerThan(g_typeTreeData, min_size);
+
+			new_folders = orig_folders - removed;
+			alert("" + removed + " folders were removed. " + new_folders + " still remain for visualization.  The folder count in the summaries will still list the original counts");
+	
+		}
+	}
+
+	loadFirstChart();
+  }
+
+  var g_HelpOverlay = 0;
+  function showHiddenHelpOverlays() {
+		if(g_HelpOverlay == 1)	{
+			g_HelpOverlay = 0;
+			$('.hiddenHelpOverlay').hide(200);
+		} else {
+			g_HelpOverlay = 1;
+			$('.hiddenHelpOverlay').show(200);
+		}
+  }
+
+</script>
+

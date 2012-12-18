@@ -1,0 +1,113 @@
+<title>HTML File Visualizer - from Zetta.net</title>
+
+<meta name="description" content="Visualize the Directories and Space on a Hard Drive" />
+<meta name="keywords" content="HTML5,File System, Zetta.net, directories, space" />
+<meta name="author" content="Lou Montulli" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="JS/jquery.prettyPhoto.js"></script>
+<LINK href="CSS/prettyPhoto.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="utf-8">
+
+ function onPageLoad() {
+
+     $("a[rel^='prettyPhoto']").prettyPhoto({ social_tools: false });
+ }
+
+</script>
+
+<style type="text/css">
+body {
+margin-top: 15px;
+margin: 5%;
+}
+
+td.screenshot
+{
+border-style:solid;
+border-width:1px;
+}
+div.video
+{
+}
+</style>
+
+<body onLoad="onPageLoad()">
+
+<table width=100%>
+<td>
+<h1>HTML 5 File system visualizer</h1>
+</td>
+<td>
+<div style="text-align:right">
+Sponsored by: 
+<A href="http://www.zetta.net"><img align=center src="http://www.zetta.net/images/zettanewlogo.png"></a>
+</div>
+</td>
+</table>
+
+<h2><a href="FileSystemVisualizer.html"> Click HERE to start the visualizer</a></h2>
+
+This tool allows you to visualize the directories and space used on your computer with the power of modern Web Browsers and HTML 5.<br>
+You can use this to quickly find out which directories contain the most data.
+
+<p>
+Note: This site requires a modern browser with SVG support and a fast JavaScript engine.   <A href="http://firefox.com/">FireFox 10+</a>, Chrome 10+, etc...
+
+<p>
+
+
+<object width= "853" height="480"><param name="movie" value="http://www.youtube.com/v/LOMU3xGW6Y4?version=3&autoplay=1&rel=0&theme=light&loop=1&showinfo=0&modestbranding=1&controls=0&autohide=1&playlist=LOMU3xGW6Y4"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/LOMU3xGW6Y4?version=3&autoplay=1&rel=0&theme=light&loop=1&showinfo=0&modestbranding=1&controls=0&autohide=1&playlist=LOMU3xGW6Y4" type="application/x-shockwave-flash" allowfullscreen="true" width="853" height="480" allowscriptaccess="always"></embed></object>
+
+<br>
+<hr>
+<br>
+
+<div class=video>
+<iframe width="853" height="510" src="http://www.youtube.com/embed/KI6DZij9LnI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<br>
+<hr>
+<br>
+
+<div class=video>
+<iframe width="853" height="510" src="http://www.youtube.com/embed/IR2vOUSv5u8?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p>
+ScreenShots:
+
+<table>
+<td class="screenshot">
+<a href="IMAGES/SummaryDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/SummaryDemoThumb.png></a>
+</td>
+<td class="screenshot">
+<a href="IMAGES/TreeLayoutDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/TreeLayoutDemoThumb.png></a>
+</td>
+<td class="screenshot">
+<a href="IMAGES/HListDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/HListDemoThumb.png></a>
+</td>
+<td class="screenshot">
+<a href="IMAGES/FListDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/FListDemoThumb.png></a>
+</td>
+<td class="screenshot">
+<a href="IMAGES/SunBurstDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/SunBurstDemoThumb.png></a>
+</td>
+<td class="screenshot">
+<a href="IMAGES/TreeMapDemo.png" rel="prettyPhoto[foo]"><img width=150 height=91 src=IMAGES/TreeMapDemoThumb.png></a>
+</td>
+</table>
+
+<p>
+
+This application makes heavy use of <a href="http://d3js.org/">d3.js</a> and the demonstration code that they have created.   
+Additionally, <a href="http://jquery.com/">jQuery</a>, <a href="http://dojotoolkit.org/">Dojo</a>, <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">PrettyPhoto</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">Javascript</a> and <a href="http://en.wikipedia.org/wiki/Svg">SVG</a> were used.   
+The full source of this application will soon be made available. (and is of course already viewable in your browser)
+
+<p>
+Created by <a href="http://en.wikipedia.org/wiki/Lou_Montulli">Lou Montulli</a> and sponsored by <a href="http://www.zetta.net/">Zetta.net</a>
+<p>
+Simple performance benchmark <a href="FileSystemVisualizer.html?RunBenchmark=1">here</a>.   Just select a dataset and compare on various browsers and devices.

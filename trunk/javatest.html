@@ -1,0 +1,73 @@
+Before applet  
+
+<script>
+
+var path="c:\\";
+
+
+function java_finished(arg1) {
+  //alert("clear_java() called:" + arg1);
+}
+
+function java_error(arg1) {
+  alert("java_error() called:" + arg1);
+}
+
+function selected_path(path) {
+  //alert("selected_path() called: " + path);
+  readFile(path);
+}
+
+function ManifestDataFromJava(data) {
+  	//alert("ManifestDataFromJava() called: " + data);
+    document.getElementById("status").innerHTML = "<xmp>" + data + "</xmp>";
+}
+
+function readFile(f) {
+
+    var reader = new FileReader();
+
+    reader.onerror = function(e) {;
+      alert('File read errored');
+    };
+    reader.onabort = function(e) {
+      alert('File read cancelled');
+    };
+
+    reader.onloadstart = function(e) {
+    };
+
+    reader.onloadend = function(fileLoadResult) {
+
+       alert("File read: " + fileLoadResult.target.result);
+
+      if(fileLoadResult.target.result != undefined)
+        document.write("<xmp>" + fileLoadResult.target.result + "</xmp>");
+
+    	document.getElementById("status").innerHTML = ' Finished! ';
+    }
+
+    reader.readAsText(f);
+    document.getElementById("status").innerHTML = ' Reading File... ' + f;
+
+  }
+
+
+</script>
+
+
+<object id="javabuilder_applet" align="top" width="100" height="100" name="Java Directory Tree List Builder" code="plugin.BrowserKickOff.class" archive="CreateDirManifest.jar?10" type="application/x-java-applet">
+	Text in applet tag
+		<param name="name" value="Java Directory Tree List Builder">
+		<param name="code" value="plugin.BrowserKickOff.class">
+		<param name="archive" value="CreateDirManifest.jar?2">
+        </object>
+
+<form>
+<input id="fileInput" type=file>
+</form>
+
+After applet
+<div id="status"></div>
+<div id="data"></div>
+

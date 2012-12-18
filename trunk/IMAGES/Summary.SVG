@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="150" height="150">
+
+  <style type="text/css" >
+      <![CDATA[
+        text {
+                font: 10px sans-serif;
+		font-weight: bold;
+        }
+ 	.title {
+                font: 12px sans-serif;
+		font-weight: bold;
+	}
+
+        ]]>
+    </style>
+
+<title>Summary</title>
+
+<!--
+<text x="1" y="12">Total number of containers:</text>
+<text x="100" y="12">  	17</text>
+<text x="1" y="24">     Total number of items:</text>
+<text x="100" y="24">  	194</text>
+<text x="1" y="36">       Total data set size:</text>
+<text x="100" y="36">  	71.8 G</text>
+<text x="1" y="48">         Average file size:</text>
+<text x="100" y="48">  	370.3 M</text>
+-->
+
+<text  y="10">
+   <tspan x="10" dy="12" class="title">Summary</tspan>
+   <tspan x="10" dy="24">Total number of folders:  	XX</tspan>
+   <tspan x="10" dy="12">Total number of items:  	XXX</tspan>
+   <tspan x="10" dy="12">Total data set size:  	NN.N G</tspan>
+   <tspan x="10" dy="12">Average file size:  	NNN.N M</tspan>
+</text>
+
+
+
+</svg>

@@ -1,0 +1,569 @@
+{
+   "rootItemBySize" : {
+      "totalSizeWithChildren" : 71839895776,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 3034041856,
+            "name" : "2005 Disney",
+            "depth" : 1,
+            "itemCountWithChildren" : 2,
+            "totalSizeAtLevel" : 3034041856,
+            "itemCountAtLevel" : 2,
+            "id" : "19",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 12956891642,
+            "name" : "2009-01 Island Lake Lodge CatSkiing Helmet Cam",
+            "depth" : 1,
+            "itemCountWithChildren" : 4,
+            "totalSizeAtLevel" : 12956891642,
+            "itemCountAtLevel" : 4,
+            "id" : "17",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 989782390,
+            "name" : "Jamie videos",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 989782390,
+                  "name" : "palm",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 5,
+                  "totalSizeAtLevel" : 989782390,
+                  "itemCountAtLevel" : 5,
+                  "id" : "16",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 5,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : null,
+            "id" : "15",
+            "containerCountWithChildren" : 2,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 3851924471,
+            "name" : "Jill Baby Vid",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 159457271,
+                  "name" : "Jill Baby Vid 2009_01_19_23_40_07",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 4,
+                  "totalSizeAtLevel" : 159457271,
+                  "itemCountAtLevel" : 4,
+                  "id" : "14",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 6,
+            "totalSizeAtLevel" : 3692467200,
+            "itemCountAtLevel" : 2,
+            "id" : "13",
+            "containerCountWithChildren" : 2,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 10499804990,
+            "name" : "1998 Pie Guys Band",
+            "depth" : 1,
+            "itemCountWithChildren" : 6,
+            "totalSizeAtLevel" : 10499804990,
+            "itemCountAtLevel" : 6,
+            "id" : "12",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 10993020479,
+            "name" : "2008-01 Island Lake Lodge CatSkiing Helmet Cam",
+            "depth" : 1,
+            "itemCountWithChildren" : 3,
+            "totalSizeAtLevel" : 10993020479,
+            "itemCountAtLevel" : 3,
+            "id" : "11",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 5047967744,
+            "name" : "Lou's MBA ceremony",
+            "depth" : 1,
+            "itemCountWithChildren" : 2,
+            "totalSizeAtLevel" : 5047967744,
+            "itemCountAtLevel" : 2,
+            "id" : "10",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 6593560580,
+            "name" : "2010 Helmet Cam",
+            "depth" : 1,
+            "itemCountWithChildren" : 114,
+            "totalSizeAtLevel" : 6593560580,
+            "itemCountAtLevel" : 114,
+            "id" : "9",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 12068024913,
+            "name" : "2001 Wedding Video",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 855720426,
+                  "name" : "2001 Wedding Video 1.5mbs",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 5,
+                  "totalSizeAtLevel" : 855720426,
+                  "itemCountAtLevel" : 5,
+                  "id" : "18",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 8,
+            "totalSizeAtLevel" : 11212304487,
+            "itemCountAtLevel" : 3,
+            "id" : "7",
+            "containerCountWithChildren" : 2,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 5004998464,
+            "name" : "2009 Family HelmetCam videos",
+            "depth" : 1,
+            "itemCountWithChildren" : 44,
+            "totalSizeAtLevel" : 5004998464,
+            "itemCountAtLevel" : 44,
+            "id" : "6",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 0,
+            "name" : "Zetta Videos",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 0,
+                  "name" : "montulli",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 0,
+                        "name" : "Internal",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 0,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : null,
+                        "id" : "8",
+                        "containerCountWithChildren" : 1,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 0,
+                        "name" : "Expansion card 3f88",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 0,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : null,
+                        "id" : "5",
+                        "containerCountWithChildren" : 1,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 0,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : null,
+                  "id" : "4",
+                  "containerCountWithChildren" : 3,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 0,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : null,
+            "id" : "3",
+            "containerCountWithChildren" : 4,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 198,
+      "totalSizeAtLevel" : 799878247,
+      "itemCountAtLevel" : 4,
+      "id" : "root",
+      "containerCountWithChildren" : 17,
+      "type" : "directory"
+   },
+   "rootItemByType" : {
+      "totalSizeWithChildren" : 71839895776,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 561664,
+            "name" : "uncatagorized",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 561664,
+                  "name" : ".mswmm",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 1,
+                  "totalSizeAtLevel" : 561664,
+                  "itemCountAtLevel" : 1,
+                  "id" : "43",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 0,
+                  "name" : ".5mbs",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 0,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : null,
+                  "id" : "42",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 0,
+                  "name" : "No Extension",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 0,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : null,
+                  "id" : "31",
+                  "containerCountWithChildren" : 16,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 1,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "30",
+            "containerCountWithChildren" : 17,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 71839334112,
+            "name" : "known types",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 733,
+                  "name" : "Settings",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 733,
+                        "name" : ".ini",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 2,
+                        "totalSizeAtLevel" : 733,
+                        "itemCountAtLevel" : 2,
+                        "id" : "38",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 2,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "37",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 12549,
+                  "name" : "WWW",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 12549,
+                        "name" : ".html",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 2,
+                        "totalSizeAtLevel" : 12549,
+                        "itemCountAtLevel" : 2,
+                        "id" : "36",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 2,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "35",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 93696,
+                  "name" : "Database",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 93696,
+                        "name" : ".db",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 7,
+                        "totalSizeAtLevel" : 93696,
+                        "itemCountAtLevel" : 7,
+                        "id" : "28",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 7,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "27",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 643,
+                  "name" : "System",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 643,
+                        "name" : ".lnk",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 643,
+                        "itemCountAtLevel" : 1,
+                        "id" : "26",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 1,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "25",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 71839226491,
+                  "name" : "media",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 113041,
+                        "name" : "images",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 113041,
+                              "name" : "rastor",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 113041,
+                                    "name" : ".jpg",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 3,
+                                    "totalSizeAtLevel" : 113041,
+                                    "itemCountAtLevel" : 3,
+                                    "id" : "41",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 3,
+                              "totalSizeAtLevel" : 0,
+                              "itemCountAtLevel" : 0,
+                              "id" : "40",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 3,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "39",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 71839113450,
+                        "name" : "video",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 1438660678,
+                              "name" : ".m4v",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 4,
+                              "totalSizeAtLevel" : 1438660678,
+                              "itemCountAtLevel" : 4,
+                              "id" : "34",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 11598559481,
+                              "name" : ".mov",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 161,
+                              "totalSizeAtLevel" : 11598559481,
+                              "itemCountAtLevel" : 161,
+                              "id" : "33",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 55211896694,
+                              "name" : ".avi",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 12,
+                              "totalSizeAtLevel" : 55211896694,
+                              "itemCountAtLevel" : 12,
+                              "id" : "32",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 799315270,
+                              "name" : ".mpg",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 799315270,
+                              "itemCountAtLevel" : 1,
+                              "id" : "29",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 1590916928,
+                              "name" : ".wmv",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 1590916928,
+                              "itemCountAtLevel" : 1,
+                              "id" : "24",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 1199764399,
+                              "name" : ".mp4",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 3,
+                              "totalSizeAtLevel" : 1199764399,
+                              "itemCountAtLevel" : 3,
+                              "id" : "23",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 182,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "22",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 185,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "21",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 197,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "20",
+            "containerCountWithChildren" : 0,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 198,
+      "totalSizeAtLevel" : 0,
+      "itemCountAtLevel" : 0,
+      "id" : "root",
+      "containerCountWithChildren" : 17,
+      "type" : "directory"
+   },
+   "rootItemByDate" : {
+      "totalSizeWithChildren" : 71839895776,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 71839895776,
+            "name" : "1 year and older",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 11598559044,
+                  "name" : "2 to 3 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 158,
+                  "totalSizeAtLevel" : 11598559044,
+                  "itemCountAtLevel" : 158,
+                  "id" : "47",
+                  "containerCountWithChildren" : 15,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 989783703,
+                  "name" : "4 to 5 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 7,
+                  "totalSizeAtLevel" : 989783703,
+                  "itemCountAtLevel" : 7,
+                  "id" : "46",
+                  "containerCountWithChildren" : 2,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 59251553029,
+                  "name" : "3 to 4 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 33,
+                  "totalSizeAtLevel" : 59251553029,
+                  "itemCountAtLevel" : 33,
+                  "id" : "45",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 198,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "44",
+            "containerCountWithChildren" : 17,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 198,
+      "totalSizeAtLevel" : 0,
+      "itemCountAtLevel" : 0,
+      "id" : "root",
+      "containerCountWithChildren" : 17,
+      "type" : "directory"
+   }
+}
+

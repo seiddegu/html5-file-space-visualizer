@@ -1,0 +1,98 @@
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="JS/interface.js"></script>
+<style type="text/css" media="all">
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #fff;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.fisheye{
+	text-align: center;
+	height: 130px;
+	position: relative;
+}
+a.fisheyeItem
+{
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	width: 40px;
+	position: absolute;
+	display: block;
+	top: 0;
+}
+.fisheyeItem img
+{
+	border: none;
+	margin: 0 auto 5px auto;
+	width: 100%;
+	display: block;
+    //vertical-align: middle;
+}
+.fisheyeItem span,
+{
+	display: none;
+	visibility: hidden;
+	positon: absolute;
+	font-size: 2.0em;
+}
+.fisheyeContainer
+{
+	background-color: #800;
+	height: 90px;
+	width: 400px;
+	left: 500px;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="fisheye" class="fisheye">
+	<div class="fisheyeContainer">
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/Summary.PNG"><span>Summary</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/VisualTree.PNG"><span>Visual Tree</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/HierarchicalList.PNG"><span>Hierarchical List</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/FlattenedList.PNG"><span>Flattened List</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/CirclePack.PNG"><span>Circle Pack</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/ZoomSunburst.PNG"><span>Zoom Sunburst</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/Sunburst.PNG"><span>Sunburst</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/TreeMap.PNG"><span>Tree Map</span></a>
+		<a href="ljm" class="fisheyeItem"><IMG width="100" hheight="100" src="IMAGES/Bubble.PNG"><span>Bubble Chart</span></a>
+	</div>
+</div>
+<div>
+<button>Button1</button>
+<button>Button2</button>
+<button>Button3</button>
+<button>Button4</button>
+<script type="text/javascript">
+	$(document).ready(
+		function()
+		{
+			$('#fisheye').Fisheye(
+				{
+					maxWidth: 150,
+					items: 'a',
+					itemsText: 'span',
+					container: '.fisheyeContainer',
+					itemWidth: 100,
+					proximity: 80,
+					halign : 'center'
+				}
+			)
+		}
+	);
+</script>
+</body>
+</html>
+

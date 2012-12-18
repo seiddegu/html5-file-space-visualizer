@@ -1,0 +1,1499 @@
+{
+   "rootItemBySize" : {
+      "totalSizeWithChildren" : 4742957056,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 27819747,
+            "name" : "DB",
+            "depth" : 1,
+            "itemCountWithChildren" : 5,
+            "totalSizeAtLevel" : 27819747,
+            "itemCountAtLevel" : 5,
+            "id" : "32",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 4123064349,
+            "name" : "VM",
+            "depth" : 1,
+            "itemCountWithChildren" : 6,
+            "totalSizeAtLevel" : 4123064349,
+            "itemCountAtLevel" : 6,
+            "id" : "17",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 320737611,
+            "name" : "FILER",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 8346633,
+                  "name" : "Sales",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 29,
+                  "totalSizeAtLevel" : 8346633,
+                  "itemCountAtLevel" : 29,
+                  "id" : "54",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 50883564,
+                  "name" : "Finance",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 10,
+                  "totalSizeAtLevel" : 50883564,
+                  "itemCountAtLevel" : 10,
+                  "id" : "41",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 20833484,
+                  "name" : "Manufacturing",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 23,
+                  "totalSizeAtLevel" : 20833484,
+                  "itemCountAtLevel" : 23,
+                  "id" : "22",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 240673930,
+                  "name" : "Marketing",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 33998440,
+                        "name" : "Marketing Plan",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 14,
+                        "totalSizeAtLevel" : 33998440,
+                        "itemCountAtLevel" : 14,
+                        "id" : "40",
+                        "containerCountWithChildren" : 1,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 69007783,
+                        "name" : "Competitive",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 23,
+                        "totalSizeAtLevel" : 69007783,
+                        "itemCountAtLevel" : 23,
+                        "id" : "26",
+                        "containerCountWithChildren" : 1,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 4660279,
+                        "name" : "PR Plan",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 7,
+                        "totalSizeAtLevel" : 4660279,
+                        "itemCountAtLevel" : 7,
+                        "id" : "10",
+                        "containerCountWithChildren" : 1,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 133007428,
+                        "name" : "Brand",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 4740955,
+                              "name" : "Designs",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 5,
+                              "totalSizeAtLevel" : 4740955,
+                              "itemCountAtLevel" : 5,
+                              "id" : "50",
+                              "containerCountWithChildren" : 1,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 594482,
+                              "name" : "Website Alpha 1",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 2133,
+                                    "name" : "_notes",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 1,
+                                    "totalSizeAtLevel" : 2133,
+                                    "itemCountAtLevel" : 1,
+                                    "id" : "59",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 534438,
+                                    "name" : "images",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 10306,
+                                          "name" : "_notes",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 1,
+                                          "totalSizeAtLevel" : 10306,
+                                          "itemCountAtLevel" : 1,
+                                          "id" : "36",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 65,
+                                    "totalSizeAtLevel" : 524132,
+                                    "itemCountAtLevel" : 64,
+                                    "id" : "35",
+                                    "containerCountWithChildren" : 2,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 82,
+                              "totalSizeAtLevel" : 57911,
+                              "itemCountAtLevel" : 16,
+                              "id" : "34",
+                              "containerCountWithChildren" : 4,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 8281827,
+                              "name" : "Launch",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 21,
+                              "totalSizeAtLevel" : 8281827,
+                              "itemCountAtLevel" : 21,
+                              "id" : "31",
+                              "containerCountWithChildren" : 1,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 936562,
+                              "name" : "Website Beta 1",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 534438,
+                                    "name" : "images",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 10306,
+                                          "name" : "_notes",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 1,
+                                          "totalSizeAtLevel" : 10306,
+                                          "itemCountAtLevel" : 1,
+                                          "id" : "29",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 65,
+                                    "totalSizeAtLevel" : 524132,
+                                    "itemCountAtLevel" : 64,
+                                    "id" : "28",
+                                    "containerCountWithChildren" : 2,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 81,
+                              "totalSizeAtLevel" : 402124,
+                              "itemCountAtLevel" : 16,
+                              "id" : "27",
+                              "containerCountWithChildren" : 3,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 756161,
+                              "name" : "Website Final 1",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 6888,
+                                    "name" : "_notes",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 1,
+                                    "totalSizeAtLevel" : 6888,
+                                    "itemCountAtLevel" : 1,
+                                    "id" : "20",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 534438,
+                                    "name" : "images",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 10306,
+                                          "name" : "_notes",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 1,
+                                          "totalSizeAtLevel" : 10306,
+                                          "itemCountAtLevel" : 1,
+                                          "id" : "47",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 65,
+                                    "totalSizeAtLevel" : 524132,
+                                    "itemCountAtLevel" : 64,
+                                    "id" : "19",
+                                    "containerCountWithChildren" : 2,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 111,
+                              "totalSizeAtLevel" : 214835,
+                              "itemCountAtLevel" : 45,
+                              "id" : "18",
+                              "containerCountWithChildren" : 4,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 90651110,
+                              "name" : "Logo",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 0,
+                                    "name" : "Shirts",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 0,
+                                    "totalSizeAtLevel" : 0,
+                                    "itemCountAtLevel" : null,
+                                    "id" : "49",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 2190476,
+                                    "name" : "Slogans",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 2,
+                                    "totalSizeAtLevel" : 2190476,
+                                    "itemCountAtLevel" : 2,
+                                    "id" : "46",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 18036608,
+                                    "name" : "Signage",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 15,
+                                    "totalSizeAtLevel" : 18036608,
+                                    "itemCountAtLevel" : 15,
+                                    "id" : "33",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 3161475,
+                                    "name" : "Breastplates",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 23,
+                                    "totalSizeAtLevel" : 3161475,
+                                    "itemCountAtLevel" : 23,
+                                    "id" : "23",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 664097,
+                                    "name" : "Source",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 3,
+                                    "totalSizeAtLevel" : 664097,
+                                    "itemCountAtLevel" : 3,
+                                    "id" : "16",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 108,
+                              "totalSizeAtLevel" : 66598454,
+                              "itemCountAtLevel" : 65,
+                              "id" : "15",
+                              "containerCountWithChildren" : 6,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 22806674,
+                              "name" : "Website Beta 2",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 1128265,
+                                    "name" : "screenshots",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 17,
+                                    "totalSizeAtLevel" : 1128265,
+                                    "itemCountAtLevel" : 17,
+                                    "id" : "48",
+                                    "containerCountWithChildren" : 1,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 703462,
+                                    "name" : "site_f",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 524132,
+                                          "name" : "images",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 64,
+                                          "totalSizeAtLevel" : 524132,
+                                          "itemCountAtLevel" : 64,
+                                          "id" : "45",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 93,
+                                    "totalSizeAtLevel" : 179330,
+                                    "itemCountAtLevel" : 29,
+                                    "id" : "44",
+                                    "containerCountWithChildren" : 2,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 20974185,
+                                    "name" : "sources",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 2425431,
+                                          "name" : "fonts",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 25,
+                                          "totalSizeAtLevel" : 2425431,
+                                          "itemCountAtLevel" : 25,
+                                          "id" : "61",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 4621576,
+                                          "name" : "clipart_library",
+                                          "children" : [
+                                             {
+                                                "totalSizeWithChildren" : 627181,
+                                                "name" : "windows",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 3,
+                                                "totalSizeAtLevel" : 627181,
+                                                "itemCountAtLevel" : 3,
+                                                "id" : "60",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             },
+                                             {
+                                                "totalSizeWithChildren" : 1646098,
+                                                "name" : "logos",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 20,
+                                                "totalSizeAtLevel" : 1646098,
+                                                "itemCountAtLevel" : 20,
+                                                "id" : "58",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             },
+                                             {
+                                                "totalSizeWithChildren" : 384924,
+                                                "name" : "buttons",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 11,
+                                                "totalSizeAtLevel" : 384924,
+                                                "itemCountAtLevel" : 11,
+                                                "id" : "55",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             },
+                                             {
+                                                "totalSizeWithChildren" : 1386490,
+                                                "name" : "fonts_for_clipart_library",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 18,
+                                                "totalSizeAtLevel" : 1386490,
+                                                "itemCountAtLevel" : 18,
+                                                "id" : "51",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             }
+                                          ],
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 56,
+                                          "totalSizeAtLevel" : 576883,
+                                          "itemCountAtLevel" : 4,
+                                          "id" : "38",
+                                          "containerCountWithChildren" : 5,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 13927178,
+                                          "name" : "psd",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 7,
+                                          "totalSizeAtLevel" : 13927178,
+                                          "itemCountAtLevel" : 7,
+                                          "id" : "14",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 88,
+                                    "totalSizeAtLevel" : 0,
+                                    "itemCountAtLevel" : null,
+                                    "id" : "13",
+                                    "containerCountWithChildren" : 8,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 199,
+                              "totalSizeAtLevel" : 762,
+                              "itemCountAtLevel" : 1,
+                              "id" : "12",
+                              "containerCountWithChildren" : 12,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 45535,
+                              "name" : "Website Staging",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 12,
+                              "totalSizeAtLevel" : 45535,
+                              "itemCountAtLevel" : 12,
+                              "id" : "11",
+                              "containerCountWithChildren" : 1,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 1154050,
+                              "name" : "Website Alpha 2",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 1138956,
+                                    "name" : "Website Alpha",
+                                    "children" : [
+                                       {
+                                          "totalSizeWithChildren" : 41241,
+                                          "name" : "favicon_20080305_4126",
+                                          "children" : [
+                                             {
+                                                "totalSizeWithChildren" : 15519,
+                                                "name" : "extra",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 4,
+                                                "totalSizeAtLevel" : 15519,
+                                                "itemCountAtLevel" : 4,
+                                                "id" : "57",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             }
+                                          ],
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 9,
+                                          "totalSizeAtLevel" : 25722,
+                                          "itemCountAtLevel" : 5,
+                                          "id" : "56",
+                                          "containerCountWithChildren" : 2,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 192063,
+                                          "name" : "Website3",
+                                          "children" : [
+                                             {
+                                                "totalSizeWithChildren" : 37490,
+                                                "name" : "images",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 3,
+                                                "totalSizeAtLevel" : 37490,
+                                                "itemCountAtLevel" : 3,
+                                                "id" : "52",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             }
+                                          ],
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 6,
+                                          "totalSizeAtLevel" : 154573,
+                                          "itemCountAtLevel" : 3,
+                                          "id" : "42",
+                                          "containerCountWithChildren" : 2,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 667321,
+                                          "name" : "Art",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 2,
+                                          "totalSizeAtLevel" : 667321,
+                                          "itemCountAtLevel" : 2,
+                                          "id" : "37",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 22321,
+                                          "name" : "zetta-comingsoon_files",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 5,
+                                          "totalSizeAtLevel" : 22321,
+                                          "itemCountAtLevel" : 5,
+                                          "id" : "30",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 22907,
+                                          "name" : "Bemuz",
+                                          "children" : [
+                                             {
+                                                "totalSizeWithChildren" : 8508,
+                                                "name" : "bemuz  support the artist_files",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 2,
+                                                "totalSizeAtLevel" : 8508,
+                                                "itemCountAtLevel" : 2,
+                                                "id" : "25",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             }
+                                          ],
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 6,
+                                          "totalSizeAtLevel" : 14399,
+                                          "itemCountAtLevel" : 4,
+                                          "id" : "24",
+                                          "containerCountWithChildren" : 2,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 44095,
+                                          "name" : "Website2",
+                                          "children" : [
+                                             {
+                                                "totalSizeWithChildren" : 37490,
+                                                "name" : "images",
+                                                "depth" : 7,
+                                                "itemCountWithChildren" : 3,
+                                                "totalSizeAtLevel" : 37490,
+                                                "itemCountAtLevel" : 3,
+                                                "id" : "62",
+                                                "containerCountWithChildren" : 1,
+                                                "type" : "directory"
+                                             }
+                                          ],
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 5,
+                                          "totalSizeAtLevel" : 6605,
+                                          "itemCountAtLevel" : 2,
+                                          "id" : "21",
+                                          "containerCountWithChildren" : 2,
+                                          "type" : "directory"
+                                       },
+                                       {
+                                          "totalSizeWithChildren" : 6045,
+                                          "name" : "May08",
+                                          "depth" : 6,
+                                          "itemCountWithChildren" : 1,
+                                          "totalSizeAtLevel" : 6045,
+                                          "itemCountAtLevel" : 1,
+                                          "id" : "9",
+                                          "containerCountWithChildren" : 1,
+                                          "type" : "directory"
+                                       }
+                                    ],
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 45,
+                                    "totalSizeAtLevel" : 142963,
+                                    "itemCountAtLevel" : 11,
+                                    "id" : "8",
+                                    "containerCountWithChildren" : 12,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 47,
+                              "totalSizeAtLevel" : 15094,
+                              "itemCountAtLevel" : 2,
+                              "id" : "7",
+                              "containerCountWithChildren" : 13,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 667,
+                        "totalSizeAtLevel" : 3040072,
+                        "itemCountAtLevel" : 1,
+                        "id" : "6",
+                        "containerCountWithChildren" : 46,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 711,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : null,
+                  "id" : "5",
+                  "containerCountWithChildren" : 50,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 773,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : null,
+            "id" : "4",
+            "containerCountWithChildren" : 54,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 271335349,
+            "name" : "LOGS",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 89447994,
+                  "name" : "NOVEMBER",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 30,
+                  "totalSizeAtLevel" : 89447994,
+                  "itemCountAtLevel" : 30,
+                  "id" : "53",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 92439361,
+                  "name" : "OCTOBER",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 31,
+                  "totalSizeAtLevel" : 92439361,
+                  "itemCountAtLevel" : 31,
+                  "id" : "43",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 89447994,
+                  "name" : "SEPTEMBER",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 30,
+                  "totalSizeAtLevel" : 89447994,
+                  "itemCountAtLevel" : 30,
+                  "id" : "39",
+                  "containerCountWithChildren" : 1,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 91,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : null,
+            "id" : "3",
+            "containerCountWithChildren" : 4,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 875,
+      "totalSizeAtLevel" : 0,
+      "itemCountAtLevel" : 0,
+      "id" : "root",
+      "containerCountWithChildren" : 60,
+      "type" : "directory"
+   },
+   "rootItemByType" : {
+      "totalSizeWithChildren" : 4742957056,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 700301,
+            "name" : "uncatagorized",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 38,
+                  "name" : ".lck",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 2,
+                  "totalSizeAtLevel" : 38,
+                  "itemCountAtLevel" : 2,
+                  "id" : "112",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 410658,
+                  "name" : ".pfb",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 12,
+                  "totalSizeAtLevel" : 410658,
+                  "itemCountAtLevel" : 12,
+                  "id" : "106",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 230550,
+                  "name" : "No Extension",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 3,
+                  "totalSizeAtLevel" : 230550,
+                  "itemCountAtLevel" : 3,
+                  "id" : "104",
+                  "containerCountWithChildren" : 60,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 38919,
+                  "name" : ".pfm",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 12,
+                  "totalSizeAtLevel" : 38919,
+                  "itemCountAtLevel" : 12,
+                  "id" : "101",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 20136,
+                  "name" : ".mht",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 1,
+                  "totalSizeAtLevel" : 20136,
+                  "itemCountAtLevel" : 1,
+                  "id" : "89",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 30,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "88",
+            "containerCountWithChildren" : 60,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 4742256755,
+            "name" : "known types",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 3081,
+                  "name" : "Settings",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 3081,
+                        "name" : ".thmx",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 3081,
+                        "itemCountAtLevel" : 1,
+                        "id" : "116",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 1,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "115",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 49408,
+                  "name" : "System",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 49408,
+                        "name" : ".ico",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 20,
+                        "totalSizeAtLevel" : 49408,
+                        "itemCountAtLevel" : 20,
+                        "id" : "95",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 20,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "94",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 998400,
+                  "name" : "Database",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 998400,
+                        "name" : ".db",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 24,
+                        "totalSizeAtLevel" : 998400,
+                        "itemCountAtLevel" : 24,
+                        "id" : "93",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 24,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "92",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 2691263839,
+                  "name" : "Compressed",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 299155096,
+                        "name" : ".gz",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 96,
+                        "totalSizeAtLevel" : 299155096,
+                        "itemCountAtLevel" : 96,
+                        "id" : "111",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 2390769589,
+                        "name" : ".bz2",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 2390769589,
+                        "itemCountAtLevel" : 1,
+                        "id" : "100",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 1339154,
+                        "name" : ".zip",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 8,
+                        "totalSizeAtLevel" : 1339154,
+                        "itemCountAtLevel" : 8,
+                        "id" : "91",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 105,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "90",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 494099,
+                  "name" : "WWW",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 37590,
+                        "name" : ".htm",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 7,
+                        "totalSizeAtLevel" : 37590,
+                        "itemCountAtLevel" : 7,
+                        "id" : "103",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 407850,
+                        "name" : ".html",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 73,
+                        "totalSizeAtLevel" : 407850,
+                        "itemCountAtLevel" : 73,
+                        "id" : "99",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 47054,
+                        "name" : ".css",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 8,
+                        "totalSizeAtLevel" : 47054,
+                        "itemCountAtLevel" : 8,
+                        "id" : "97",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 1605,
+                        "name" : ".shtml",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 1605,
+                        "itemCountAtLevel" : 1,
+                        "id" : "87",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 89,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "86",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 10363849,
+                  "name" : "Generic Data Format",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 40503,
+                        "name" : ".xml",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 7,
+                        "totalSizeAtLevel" : 40503,
+                        "itemCountAtLevel" : 7,
+                        "id" : "113",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 3170194,
+                        "name" : ".pptx",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 3170194,
+                        "itemCountAtLevel" : 1,
+                        "id" : "78",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 7153152,
+                        "name" : ".ppt",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 3,
+                        "totalSizeAtLevel" : 7153152,
+                        "itemCountAtLevel" : 3,
+                        "id" : "77",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 11,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "76",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 123686879,
+                  "name" : "media",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 123686879,
+                        "name" : "images",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 71177539,
+                              "name" : "vector",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 12486585,
+                                    "name" : ".ai",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 41,
+                                    "totalSizeAtLevel" : 12486585,
+                                    "itemCountAtLevel" : 41,
+                                    "id" : "109",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 58591242,
+                                    "name" : ".eps",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 25,
+                                    "totalSizeAtLevel" : 58591242,
+                                    "itemCountAtLevel" : 25,
+                                    "id" : "98",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 99712,
+                                    "name" : ".svg",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 1,
+                                    "totalSizeAtLevel" : 99712,
+                                    "itemCountAtLevel" : 1,
+                                    "id" : "85",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 67,
+                              "totalSizeAtLevel" : 0,
+                              "itemCountAtLevel" : 0,
+                              "id" : "84",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 52509340,
+                              "name" : "rastor",
+                              "children" : [
+                                 {
+                                    "totalSizeWithChildren" : 240923,
+                                    "name" : ".gif",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 207,
+                                    "totalSizeAtLevel" : 240923,
+                                    "itemCountAtLevel" : 207,
+                                    "id" : "114",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 3218523,
+                                    "name" : ".png",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 35,
+                                    "totalSizeAtLevel" : 3218523,
+                                    "itemCountAtLevel" : 35,
+                                    "id" : "110",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 4753688,
+                                    "name" : ".tif",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 1,
+                                    "totalSizeAtLevel" : 4753688,
+                                    "itemCountAtLevel" : 1,
+                                    "id" : "108",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 19614429,
+                                    "name" : ".jpg",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 103,
+                                    "totalSizeAtLevel" : 19614429,
+                                    "itemCountAtLevel" : 103,
+                                    "id" : "107",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 24459217,
+                                    "name" : ".psd",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 50,
+                                    "totalSizeAtLevel" : 24459217,
+                                    "itemCountAtLevel" : 50,
+                                    "id" : "79",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 },
+                                 {
+                                    "totalSizeWithChildren" : 222560,
+                                    "name" : ".bmp",
+                                    "depth" : 5,
+                                    "itemCountWithChildren" : 1,
+                                    "totalSizeAtLevel" : 222560,
+                                    "itemCountAtLevel" : 1,
+                                    "id" : "75",
+                                    "containerCountWithChildren" : 0,
+                                    "type" : "directory"
+                                 }
+                              ],
+                              "depth" : 4,
+                              "itemCountWithChildren" : 397,
+                              "totalSizeAtLevel" : 0,
+                              "itemCountAtLevel" : 0,
+                              "id" : "74",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 464,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "73",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 464,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "72",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 179740096,
+                  "name" : "Office types",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 10680430,
+                        "name" : "Spreadsheets",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 2196992,
+                              "name" : ".xls",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 2196992,
+                              "itemCountAtLevel" : 1,
+                              "id" : "117",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 20982,
+                              "name" : ".xlsx",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 20982,
+                              "itemCountAtLevel" : 1,
+                              "id" : "102",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 8462456,
+                              "name" : ".xlsm",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 8462456,
+                              "itemCountAtLevel" : 1,
+                              "id" : "83",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 3,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "82",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 12535646,
+                        "name" : "Text",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 1886,
+                              "name" : ".txt",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 2,
+                              "totalSizeAtLevel" : 1886,
+                              "itemCountAtLevel" : 2,
+                              "id" : "105",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 12533760,
+                              "name" : ".doc",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 14,
+                              "totalSizeAtLevel" : 12533760,
+                              "itemCountAtLevel" : 14,
+                              "id" : "81",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 16,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "80",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 156524020,
+                        "name" : "Documents",
+                        "children" : [
+                           {
+                              "totalSizeWithChildren" : 147968,
+                              "name" : ".pub",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 1,
+                              "totalSizeAtLevel" : 147968,
+                              "itemCountAtLevel" : 1,
+                              "id" : "96",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           },
+                           {
+                              "totalSizeWithChildren" : 156376052,
+                              "name" : ".pdf",
+                              "depth" : 4,
+                              "itemCountWithChildren" : 87,
+                              "totalSizeAtLevel" : 156376052,
+                              "itemCountAtLevel" : 87,
+                              "id" : "71",
+                              "containerCountWithChildren" : 0,
+                              "type" : "directory"
+                           }
+                        ],
+                        "depth" : 3,
+                        "itemCountWithChildren" : 88,
+                        "totalSizeAtLevel" : 0,
+                        "itemCountAtLevel" : 0,
+                        "id" : "70",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 107,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "69",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 1732294760,
+                  "name" : "Disk Images",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 1732294760,
+                        "name" : ".vmdk",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 5,
+                        "totalSizeAtLevel" : 1732294760,
+                        "itemCountAtLevel" : 5,
+                        "id" : "68",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 5,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "67",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 3362344,
+                  "name" : "Fonts",
+                  "children" : [
+                     {
+                        "totalSizeWithChildren" : 3282980,
+                        "name" : ".ttf",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 18,
+                        "totalSizeAtLevel" : 3282980,
+                        "itemCountAtLevel" : 18,
+                        "id" : "66",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     },
+                     {
+                        "totalSizeWithChildren" : 79364,
+                        "name" : ".otf",
+                        "depth" : 3,
+                        "itemCountWithChildren" : 1,
+                        "totalSizeAtLevel" : 79364,
+                        "itemCountAtLevel" : 1,
+                        "id" : "65",
+                        "containerCountWithChildren" : 0,
+                        "type" : "directory"
+                     }
+                  ],
+                  "depth" : 2,
+                  "itemCountWithChildren" : 19,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : 0,
+                  "id" : "64",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 845,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "63",
+            "containerCountWithChildren" : 0,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 875,
+      "totalSizeAtLevel" : 0,
+      "itemCountAtLevel" : 0,
+      "id" : "root",
+      "containerCountWithChildren" : 60,
+      "type" : "directory"
+   },
+   "rootItemByDate" : {
+      "totalSizeWithChildren" : 4742957056,
+      "name" : "ALL",
+      "children" : [
+         {
+            "totalSizeWithChildren" : 0,
+            "name" : "within 1 year",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 0,
+                  "name" : "1 month to 1 year",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 0,
+                  "totalSizeAtLevel" : 0,
+                  "itemCountAtLevel" : null,
+                  "id" : "126",
+                  "containerCountWithChildren" : 2,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 0,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "125",
+            "containerCountWithChildren" : 2,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 4742957056,
+            "name" : "1 year and older",
+            "children" : [
+               {
+                  "totalSizeWithChildren" : 101980,
+                  "name" : "13 to 14 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 6,
+                  "totalSizeAtLevel" : 101980,
+                  "itemCountAtLevel" : 6,
+                  "id" : "127",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 43515052,
+                  "name" : "2 to 3 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 50,
+                  "totalSizeAtLevel" : 43515052,
+                  "itemCountAtLevel" : 50,
+                  "id" : "124",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 19471073,
+                  "name" : "4 to 5 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 81,
+                  "totalSizeAtLevel" : 19471073,
+                  "itemCountAtLevel" : 81,
+                  "id" : "123",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 4563713886,
+                  "name" : "1 to 2 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 194,
+                  "totalSizeAtLevel" : 4563713886,
+                  "itemCountAtLevel" : 194,
+                  "id" : "122",
+                  "containerCountWithChildren" : 57,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 116114124,
+                  "name" : "3 to 4 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 542,
+                  "totalSizeAtLevel" : 116114124,
+                  "itemCountAtLevel" : 542,
+                  "id" : "121",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               },
+               {
+                  "totalSizeWithChildren" : 40941,
+                  "name" : "10 to 11 years",
+                  "depth" : 2,
+                  "itemCountWithChildren" : 2,
+                  "totalSizeAtLevel" : 40941,
+                  "itemCountAtLevel" : 2,
+                  "id" : "120",
+                  "containerCountWithChildren" : 0,
+                  "type" : "directory"
+               }
+            ],
+            "depth" : 1,
+            "itemCountWithChildren" : 875,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : 0,
+            "id" : "119",
+            "containerCountWithChildren" : 57,
+            "type" : "directory"
+         },
+         {
+            "totalSizeWithChildren" : 0,
+            "name" : "unknown date",
+            "depth" : 1,
+            "itemCountWithChildren" : 0,
+            "totalSizeAtLevel" : 0,
+            "itemCountAtLevel" : null,
+            "id" : "118",
+            "containerCountWithChildren" : 1,
+            "type" : "directory"
+         }
+      ],
+      "depth" : 0,
+      "itemCountWithChildren" : 875,
+      "totalSizeAtLevel" : 0,
+      "itemCountAtLevel" : 0,
+      "id" : "root",
+      "containerCountWithChildren" : 60,
+      "type" : "directory"
+   }
+}
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="150" height="150">
+
+   <style type="text/css" >
+      <![CDATA[
+      circle {
+		fill: rgb(31, 119, 180);
+      		fill-opacity: .25;
+		stroke: rgb(31, 119, 180);
+		stroke-width: 1px;
+      	}
+
+	.leaf circle {
+		fill: #ff7f0e;
+      		fill-opacity: 1;
+	}
+		
+	text {
+		font: 10px sans-serif;
+	}
+	]]>
+    </style>
+
+
+<g transform="translate(2, 2)">
+<g class="node" transform="translate(73, 73)">
+<title>Circle Pack</title>
+<circle r="73" />
+</g>
+<g class="leaf node" transform="translate(40.0597, 58.5689)">
+<title>1998 Pie Guys Band: 10.5 G</title>
+<circle r="22.5373791256207" />
+<text text-anchor="middle" dy=".3em">1998 Pi</text>
+</g>
+<g class="node" transform="translate(79.6634, 49.6837)">
+<title>2001 Wedding Video</title>
+<circle r="6.4339657292196835" />
+</g>
+<g class="leaf node" transform="translate(79.6634, 49.6837)">
+<title>2001 Wedding Video 1.5mbs: 855.7 M</title>
+<circle r="6.4339657292196835" />
+<text text-anchor="middle" dy=".3em">20</text>
+</g>
+<g class="leaf node" transform="translate(79.2725, 74.708)">
+<title>2005 Disney: 3034.0 M</title>
+<circle r="12.11500444530815" />
+<text text-anchor="middle" dy=".3em">2005</text>
+</g>
+<g class="leaf node" transform="translate(56.1641, 101.228)">
+<title>2008-01 Island Lake Lodge CatSkiing Helmet Cam: 11.0 G</title>
+<circle r="23.060637683932487" />
+<text text-anchor="middle" dy=".3em">2008-01</text>
+</g>
+<g class="leaf node" transform="translate(106.469, 69.5825)">
+<title>2009 Family HelmetCam videos: 5005.0 M</title>
+<circle r="15.560185431817601" />
+<text text-anchor="middle" dy=".3em">2009 </text>
+</g>
+<g class="leaf node" transform="translate(103.442, 110.066)">
+<title>Zetta Helmet Cam: 13.0 G</title>
+<circle r="25.035899950115557" />
+<text text-anchor="middle" dy=".3em">Zetta </text>
+</g>
+<g class="leaf node" transform="translate(67.3222, 28.7582)">
+<title>2010 Helmet Cam: 6593.6 M</title>
+<circle r="17.859643857929477" />
+<text text-anchor="middle" dy=".3em">2010 </text>
+</g>
+<g class="node" transform="translate(69.516, 58.364)">
+<title>Jamie videos</title>
+<circle r="6.919626532673337" />
+</g>
+<g class="leaf node" transform="translate(69.516, 58.364)">
+<title>palm: 989.8 M</title>
+<circle r="6.919626532673337" />
+<text text-anchor="middle" dy=".3em">pa</text>
+</g>
+<g class="node" transform="translate(79.1991, 58.8833)">
+<title>Jill Baby Vid</title>
+<circle r="2.777377785440993" />
+</g>
+<g class="leaf node" transform="translate(79.1991, 58.8833)">
+<title>Jill Baby Vid 2009_01_19_23_40_07: 159.5 M</title>
+<circle r="2.777377785440993" />
+<text text-anchor="middle" dy=".3em" />
+</g>
+<g class="leaf node" transform="translate(99.1144, 39.275)">
+<title>Lou's MBA ceremony: 5048.0 M</title>
+<circle r="15.626836905032954" />
+<text text-anchor="middle" dy=".3em">Lou</text>
+</g>
+<g class="node" transform="translate(87.8716, 58.8833)">
+<title>Zetta Videos</title>
+<circle r="5.8951605971816585" />
+</g>
+<g class="leaf node" transform="translate(87.8716, 58.8833)">
+<title>montulli: 3.5G </title>
+<circle r="5.8951605971816585" />
+<text text-anchor="middle" dy=".3em">m</text>
+</g>
+</g>
+</svg>
