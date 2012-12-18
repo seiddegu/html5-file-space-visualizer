@@ -1,0 +1,83 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="150" height="150">
+
+   <style type="text/css" >
+      <![CDATA[
+	circle {
+    		fill-opacity: 0.75;
+    		stroke: #1F77B4;
+    		stroke-width: 1px;
+	}
+
+	text {
+  		font: 10px sans-serif;
+	}
+
+	.node circle {
+    		fill: #FFFFFF;
+    		stroke: steelblue;
+    		stroke-width: 1.5px;
+	}
+        ]]>
+    </style>
+
+<title>Bubble Chart</title>
+<g class="node" transform="translate(87.6965, 81.9453)">
+<title>Zetta Band: 10.5 G</title>
+<circle r="24.781171404669905" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">Zetta</text>
+</g>
+<g class="node" transform="translate(119.552, 81.9453)">
+<title>2001 Wedding Video 1.5mbs: 855.7 M</title>
+<circle r="7.074523025009183" style="fill: rgb(107, 174, 214);" />
+<text text-anchor="middle" dy=".3em">20</text>
+</g>
+<g class="node" transform="translate(119.882, 61.5523)">
+<title>2005 Disney: 3034.0 M</title>
+<circle r="13.321158598526736" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">2005</text>
+</g>
+<g class="node" transform="translate(94.5963, 32.2846)">
+<title>2008-01 Island Lake Lodge CatSkiing Helmet Cam: 11.0 G</title>
+<circle r="25.356524907409003" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">2008-01 </text>
+</g>
+<g class="node" transform="translate(57.4849, 52.9267)">
+<title>2009 Family HelmetCam videos: 5005.0 M</title>
+<circle r="17.109337342422677" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">2009 </text>
+</g>
+<g class="node" transform="translate(36.418, 92.2804)">
+<title>2009-01 Island Lake Lodge CatSkiing Helmet Cam: 13.0 G</title>
+<circle r="27.528441726779242" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">2009-01 I</text>
+</g>
+<g class="node" transform="translate(71.8311, 123.434)">
+<title>2010 Helmet Cam: 6593.6 M</title>
+<circle r="19.63772687155882" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">2010 H</text>
+</g>
+<g class="node" transform="translate(96.9892, 112.973)">
+<title>palm: 989.8 M</title>
+<circle r="7.608535589106883" style="fill: rgb(158, 202, 225);" />
+<text text-anchor="middle" dy=".3em">pa</text>
+</g>
+<g class="node" transform="translate(103.721, 104.705)">
+<title>Jill Baby Vid 2009_01_19_23_40_07: 159.5 M</title>
+<circle r="3.053889920957711" style="fill: rgb(198, 219, 239);" />
+<text text-anchor="middle" dy=".3em">J</text>
+</g>
+<g class="node" transform="translate(123.928, 105.804)">
+<title>Lou's MBA ceremony: 5048.0 M</title>
+<circle r="17.182624549995353" style="fill: rgb(49, 130, 189);" />
+<text text-anchor="middle" dy=".3em">Lou's</text>
+</g>
+<g class="node" transform="translate(120.897, 88.8911)">
+<title>montulli: 1 </title>
+<circle r="0.00024184171561433842" style="fill: rgb(230, 85, 13);" />
+<text text-anchor="middle" dy=".3em" />
+</g>
+</svg>

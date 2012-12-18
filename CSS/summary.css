@@ -1,0 +1,22 @@
+table.summary_table {
+  margin: 1em 1em 1em 2em;
+  background: whitesmoke;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.summary_table th, table.summary_table td {
+  border: 1px silver solid;
+  padding: 0.2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+}
+table.summary_table th {
+  background: gainsboro;
+  text-align: center;
+}
+table.summary_table caption {
+  margin-left: inherit;
+  margin-right: inherit;
+}

@@ -1,0 +1,40 @@
+
+  #parse_progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+  #read_progress_bar {
+    margin: 10px 0;
+    padding: 3px;
+    border: 1px solid #000;
+    font-size: 14px;
+    clear: both;
+    opacity: 0;
+    -moz-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+  }
+  #read_progress_bar.loading {
+    opacity: 1.0;
+  }
+  #parse_progress_bar.loading {
+    opacity: 1.0;
+  }
+  #read_progress_bar .read_percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+  }
+  #parse_progress_bar .parse_percent {
+    background-color: #99ccff;
+    height: auto;
+    width: 0;
+  }
+
