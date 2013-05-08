@@ -208,13 +208,16 @@ sub FileOrDirectoryFound($$) {
 	warn "stat failed [$@]\n";
   }
 
-  print "found a ";
-  if (-d $filename){                     # is this a directory?
-	print " DIRECTORY ";
-  } else {
-	print " FILE ";
+  my $debug = 0;
+  if($debug) {
+  	print "found a ";
+  	if (-d $filename){                     # is this a directory?
+		print " DIRECTORY ";
+  	} else {
+		print " FILE ";
+  	}
+  	print "" . $path . " / " . $filename . "  Size: " . $sb->size . "\n";
   }
-  print "" . $path . " / " . $filename . "  Size: " . $sb->size . "\n";
   add_file_item ($sb, $filename, $path);
 }
 
@@ -279,7 +282,6 @@ sub add_file_item ($$$) {
 		} else {
 			$path = $path . "/" . $filename;
 		}
-print "Directory path to be inserted: $path \n";
 	} else {
 		$item->{type} = "file";
 	}
