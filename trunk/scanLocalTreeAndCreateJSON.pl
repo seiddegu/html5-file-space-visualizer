@@ -110,16 +110,20 @@ sub main() {
 
 	load_all_extensions();
 
+	# strip the trail slash if it's there
+
 	if ($#ARGV != 1 ) {
 		print "usage: SCRIPT_NAME   [Directory to scan]  [Output file for JSON Data]\n";
 		exit;
 	}
     print "Scanning directory: " . $dirToScan . " and printing to file: " . $outputFile . "\n";
 
-    ScanDirectory($dirToScan, "");
+    StartScanDirectory($dirToScan);
 
     # now all the data is summarized by path, turn it into a tree
 
+      #debug print
+      #while (my ($k,$v)=each %g_pathHash){print "$k $v\n"}
 	while( my ($k, $v) = each %g_pathHash) {
 		my @pathArr = split('\/', $k);
     	loadFileItemInNestedFileArray(1, $g_rootItemBySize, $v, \@pathArr);
@@ -147,6 +151,22 @@ sub main() {
 	open FILE, "> $outputFile" or die $!;
 	my $json_txt = JSON->new->pretty(1)->utf8->encode ($fakeRoot);
 	print FILE $json_txt . "\n";
+}
+
+# this function starts off the directory scan.
+# It is different so that we always pass "." into the base of the recursive function
+# Otherwise the paths generated have the fullCWD info
+sub StartScanDirectory($) {
+
+    my ($newSubDir, $fullDir) = @_; 
+
+    my($startdir) = &cwd; # keep track of where we began
+
+    chdir($newSubDir) or die "Unable to enter dir $newSubDir:$!\n";
+
+    ScanDirectory(".", "");
+
+    chdir($startdir) or die "Unable to change to dir $startdir:$!\n";
 }
 
 sub ScanDirectory($$) {
