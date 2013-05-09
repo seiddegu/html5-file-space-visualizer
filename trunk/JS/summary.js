@@ -8,7 +8,7 @@ function displaySummary(location, window_size, data) {
 
  sumary_div = d3.select(location).append("div").attr("id", "summary_div");
 
- sumary_div.html("<p><ul><table class='summary_table' >\
+ sumary_div.html("<p><br><ul><table class='summary_table' >\
 	<tr>\
 	<th>Summary</th><th>Value</th>\
 	<tr>\
@@ -28,7 +28,9 @@ function displaySummary(location, window_size, data) {
 	<td>" + formatSizeAsString(data.totalSizeWithChildren/data.itemCountWithChildren) + "</td>\
 	</tr>\
 	</table>\
-	</ul>");
+	</ul>\
+    <p style='color:orange;font-size:20px;text-align:center'>\
+    Please select another visualization from the row of icons at the top of the page</p>");
 /**
 	<p><hr width='75%'><p>\
 	<div id='help_section' style='margin: 5px 50px 0px 50px'>\

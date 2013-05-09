@@ -13,7 +13,11 @@ function displayDojoTreeGrid(location, window_size, data) {
 	hideChildrenAtDepth(data, -1);
 	removeParentRefs(data);
 
-	ourData = dojo.clone(data);
+	// wow - dojo.clone takes tens of seconds to clone this from some reason.
+	// stringify clone is near instant.   Go figure
+	// We need to clone otherwise the dojo functions muck up the data.
+	//ourData = dojo.clone(data);
+    ourData = JSON.parse(JSON.stringify(data)) 
 
 	var treeGridDivId = "treeGridDiv" + numTimesCalled++;
 

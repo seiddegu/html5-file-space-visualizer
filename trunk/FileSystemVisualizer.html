@@ -4,8 +4,19 @@
 <meta name="author" content="Lou Montulli" />
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
+<style>
+#waiting_popup {
+	position: absolute;
+	display:block;
+	z-index: 100;
+}
+</style>
 
 <script>
+
+  // script defaults
+  var g_shouldQueryUserAboutRemovingSmallDirs = false;
+
   function supportsSvg() {
     return document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1");
   }
@@ -36,18 +47,6 @@
 </script>
 
 <script>
-
-    var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9296505-1']);
-      _gaq.push(['_setDomainName', 'zetta.net']);
-      _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
 
 	function loadjscssfile(filename){
 		var fileref;
@@ -167,6 +166,16 @@
 		d3.select("#javabuilder_applet").remove();
 	}
 
+	function showWaitingPopup(){
+		if( !document.getElementById ) return;
+			document.getElementById('waiting_popup').style.display = 'block';
+	}
+
+	function hideWaitingPopup(){
+		if( !document.getElementById ) return;
+			document.getElementById('waiting_popup').style.display = 'none';
+	}
+
 	// JApplet invoked functions
 	// DO NOT modify interface without modifying applet code
 	function selected_path(path) {
@@ -200,7 +209,8 @@
 		startFisheyeMenu();
 
 		// hide the loading and unhide the buttons
-		document.getElementById('page_loading').style.display="none";
+		hideWaitingPopup();
+		//document.getElementById('page_loading').style.display="none";
 
 		g_runBenchmark = (document.location.search.indexOf("RunBenchmark") > -1);
 
@@ -236,7 +246,7 @@
 	}
     else
 	{
-    	document.getElementById('page_loading').innerHTML = "<h2>This HTML application requires features that are not supported in the browser you are using.</h2> This has been tested on Firefox 10+, Chrome 16+, and recent releases of Webkit.   Please try again with a different browser";
+    	document.getElementById('waiting_popup').innerHTML = "<h2>This HTML application requires features that are not supported in the browser you are using.</h2> This has been tested on Firefox 10+, Chrome 16+, and recent releases of Webkit.   Please try again with a different browser";
 	}
   }
 
@@ -318,8 +328,8 @@
   <div id='title' style="display:none"></div> 
 </div>
 
-<div id="page_loading" class="docs">
-    <h1>Loading Page, please be patient... <img src="IMAGES/waiting.gif"></h1>
+<div id="waiting_popup" class="docs">
+    <h1>Loading, please be patient... <img src="IMAGES/waiting.gif"></h1>
 </div>
 
 <div style="visibility:hidden" class="docs" id="load_data">
@@ -624,8 +634,15 @@
      else
      	window_size.h -= 60;   // subtract for our controls
 
+ 	 // LJM   add busy status here
+	 showWaitingPopup();
+
      //chartObj.functionRef( "#chart", window_size, dojo.clone(g_activeTreeData) );
-     chartObj.functionRef( "#chart", window_size, g_activeTreeData );
+	 // use a setTimeout function to push this in the background and keep the UI active
+     setTimeout(function() {
+			chartObj.functionRef( "#chart", window_size, g_activeTreeData );
+			hideWaitingPopup();
+			}, 0);
 
      g_currentChartButtonId = chartObj.buttonId;
   }
@@ -832,8 +849,14 @@
 	var min_size = 500*1024;
 
 	// check to see if this is a really large tree and offer to pair it down
+
+
     if(!g_runBenchmark && g_sizeTreeData.containerCountWithChildren > 5000) {
-		var answer = confirm("You have " + g_sizeTreeData.containerCountWithChildren + " folders which may cause a significant slowdown when using some of the visualizations.   Viewing will be faster by removing very small or empty folders.\n\nWould you like to suppress all folders smaller than " + min_size/1024 + "K?   (This will not effect your actual folders)");
+
+		if(g_shouldQueryUserAboutRemovingSmallDirs)
+			var answer = confirm("You have " + g_sizeTreeData.containerCountWithChildren + " folders which may cause a significant slowdown when using some of the visualizations.   Viewing will be faster by removing very small or empty folders.\n\nWould you like to suppress all folders smaller than " + min_size/1024 + "K?   (This will not effect your actual folders)");
+		else
+			var answer = 1;
 
 		if(answer) {
 			var orig_folders = g_sizeTreeData.containerCountWithChildren;
@@ -841,7 +864,7 @@
 			removeLeafNodesSmallerThan(g_typeTreeData, min_size);
 
 			new_folders = orig_folders - removed;
-			alert("" + removed + " folders were removed. " + new_folders + " still remain for visualization.  The folder count in the summaries will still list the original counts");
+			alert("To reduce the amount of data that needs to be visualized and make this tool run faster, " + removed + " folders that are less than " + min_size/1024 + "K were suppressed. " + new_folders + " still remain for visualization.  The folder count in the summaries will still list the original counts");
 	
 		}
 	}
