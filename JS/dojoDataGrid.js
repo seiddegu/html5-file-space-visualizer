@@ -36,6 +36,8 @@ function displayDojoDataGrid(location, window_size, data) {
 		return rv.toFixed(1) + "%";
 	};
 
+   /*  COMPLETE LAYOUT.   Num Items appears to be null for some entries.   This causes the 
+    *  DojoDataGrid to fail.   Need to fix that to bring back more stats
 	var layout =  [
 		//{ name: "File Name", field: "name",     width: "100%", formatter: formatName },
 	{ name: "File Name", field: "name",     width: "100%"},
@@ -48,6 +50,15 @@ function displayDojoDataGrid(location, window_size, data) {
 	{ name: "Items w/ children", field: "itemCountWithChildren",  width: "90px", formatter: formatSize },
 	{ name: "Dirs w/ children", field: "containerCountWithChildren",  width: "90px", formatter: formatSize },
 	];
+   */
+
+	var layout =  [
+		{ name: "File Name", field: "name",     width: "100%"},
+		{ name: "Size in dir", field: "totalSizeAtLevel",  width: "90px", formatter: formatSize },
+		{ name: "% in dir",   field: "totalSizeAtLevel",   width: "90px", formatter: formatPercent },
+		{ name: "Size w/ children", field: "totalSizeWithChildren",  width: "90px", formatter: formatSize },
+		{ name: "% w/ children",   field: "totalSizeWithChildren",   width: "90px", formatter: formatPercent },
+		];
 
 	var noSizeLayout =  [
 		{ name: "File Name", field: "name",     width: "40%"},
@@ -59,7 +70,8 @@ function displayDojoDataGrid(location, window_size, data) {
 		//label: 'name',
 	};
 
-	our_data.items = flattenTree(data);
+	our_data.items = flattenTree(ourData = JSON.parse(JSON.stringify(data)));
+
 
 	//alert(JSON.stringify(our_data, null, 5));
 

@@ -23,13 +23,17 @@ function recurseThroughTreeAndAddToList(subtree, list, rootName) {
 			newNode.name = subtree.name;
    		if(subtree.children != undefined) {
    			var children = subtree.children;
-			//newNode.children = null;
+			//newNode.children = undefined;
 	
+			//console.log(newNode);
 			list.push(newNode);
+			//console.log(list.length);
 	
 			for(var i in children) {
 				recurseThroughTreeAndAddToList(children[i], list, newNode.name);
 			}
+
+			//newNode.children = children;
   		}
 		else
 		{
